@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/f4fafc57a7.js" crossorigin="anonymous"></script>
+  <body>
+    <main>
+        <div class="form-container">
+          <div class="confirmation submitted">
+            <p class="msg"></p>
+          </div>
+          <h1>Sign Up</h1>
+
+          <form action="index.html" method="post">
+
+            <div class="input-container">
+              <input id="firstName" type="text" name="name" value="">
+              <label for="firstName">First Name</label>
+              <i class="fas fa-check-circle gray"></i>
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+
+            <div class="input-container">
+              <input id="lastName" type="text" name="surname" value="">
+              <label for="lastName">Last Name</label>
+              <i class="fas fa-check-circle gray"></i>
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+
+            <div class="input-container">
+              <input id=email type="mail" name="email" value="">
+              <label for="email">Email</label>
+              <i class="fas fa-check-circle gray"></i>
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+
+            <div class="input-container">
+              <input id="address" type="text" name="address" value="">
+              <label for="address">Address</label>
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+
+            <div class="input-container">
+              <input id="pass" type="password" name="password" value="">
+              <label for="pass">Password</label>
+              <i class="fas fa-check-circle gray"></i>
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+
+            <div class="checklist">
+              <p>Password must comply to the following parameters:</p>
+              <ul>
+                <li id="length" class="invalid">At least 10 characters</li>
+                <li id="oneNum" class="invalid">At least one number</li>
+                <li id="threeSpecial" class="invalid">At least three special characters</li>
+                <li id="space" class="invalid">No white spaces</li>
+                <li id="containNames" class="invalid">Cannot contain your first name or last name</li>
+              </ul>
+            </div>
+
+            <div class="input-container">
+              <input id="confPass" type="password" name="confirmPassword" value="">
+              <label for="confPass">Confirm Password</label>
+              <i class="fas fa-check-circle gray"></i>
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+
+            <button type="submit" name="button">Sign Up</button>
+
+          </form>
+        </div>
+    </main>
+    <script src="validation.js"></script>
+  </body>
+</html>
